@@ -8,7 +8,7 @@ function HomePage(props) {
             <title>Welcome to Next.js!</title>
          </Head>
          <div>Welcome to Next.js!</div>
-         <span onClick={() => Router.push('/?counter=1', undefined, { shallow: true })}>Reload</span>
+         <span onClick={() => Router.push('/api/user?counter=1', undefined, { shallow: true })}>Reload</span>
          <br/>
          <div>Next stars: {props.stars}</div>
          <img src="/logo.png" alt="TutorialsPoint Logo" />

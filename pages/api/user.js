@@ -1,5 +1,10 @@
+// export default (req, res) => {
+//     res.statusCode = 200
+//     res.setHeader('Content-Type', 'application/json')
+//     res.end(JSON.stringify({ name: 'Robert' }))
+//  }
 export default (req, res) => {
     res.statusCode = 200
     res.setHeader('Content-Type', 'application/json')
-    res.end(JSON.stringify({ name: 'Robert' }))
+    res.end(JSON.stringify({ query: req.query }))
  }
